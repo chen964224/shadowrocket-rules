@@ -19,3 +19,15 @@
 
 改完规则后重新生成并推送到本仓库，手机下次自动更新即生效；
 需要立刻生效时，在配置列表里下拉刷新，或点开该配置重新下载。
+
+## 缓存与「立刻生效」
+
+- `raw.githubusercontent.com`：`Cache-Control: max-age=300`（5 分钟），更新最快。
+  国内部分网络可能打不开，打不开时用下面的 jsDelivr。
+- `testingcf.jsdelivr.net/...@master/...`：分支引用有约 12 小时边缘缓存，
+  `purge.jsdelivr.net` 对分支引用实测**不能**立即刷新（返回 finished 但仍回旧内容）。
+  需要即时生效时，用 commit sha 形式的地址（不可变、立即是新内容）：
+
+  ```
+  https://testingcf.jsdelivr.net/gh/chen964224/shadowrocket-rules@<commit-sha>/futu.conf
+  ```
