@@ -8,9 +8,9 @@
 1. Shadowrocket → 底部「配置」→ 右上角 `+` → **添加远程文件**
 2. URL 填：
    - 国内推荐（jsDelivr 镜像）：
-     `https://testingcf.jsdelivr.net/gh/chen964224/shadowrocket-rules@main/futu.conf`
+     `https://testingcf.jsdelivr.net/gh/chen964224/shadowrocket-rules@master/futu.conf`
    - 备用（GitHub raw）：
-     `https://raw.githubusercontent.com/chen964224/shadowrocket-rules/main/futu.conf`
+     `https://raw.githubusercontent.com/chen964224/shadowrocket-rules/master/futu.conf`
 3. 打开「自动更新」，间隔 24 小时
 4. 下载后点该配置 →「使用配置」
 5. 首页选中节点，全局路由选「配置」
